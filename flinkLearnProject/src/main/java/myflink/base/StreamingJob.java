@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package myflink;
+package myflink.base;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.common.functions.FilterFunction;
