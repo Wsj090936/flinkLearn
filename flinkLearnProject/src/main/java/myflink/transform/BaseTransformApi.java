@@ -1,5 +1,6 @@
 package myflink.transform;
 
+import org.apache.flink.api.common.functions.ReduceFunction;
 import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.api.java.tuple.Tuple;
@@ -11,6 +12,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
  * 基本转换算子API
+ * 聚合算子reduce
  *
  * @Author jiahao
  * @Date 2020/4/19 11:39
@@ -26,8 +28,16 @@ public class BaseTransformApi {
         }).returns(Types.TUPLE(Types.STRING,Types.INT));
 
         // 按照name进行分组
-        KeyedStream<Tuple2<String, Integer>, Tuple> tuple2TupleKeyedStream = map.keyBy(0);
-        tuple2TupleKeyedStream.sum(1).print();
+        KeyedStream<Tuple2<String, Integer>, Tuple> keyedStream = map.keyBy(0);
+//        .sum(1);
+        SingleOutputStreamOperator<Tuple2<String, Integer>> reduce = keyedStream.reduce(new ReduceFunction<Tuple2<String, Integer>>() {
+            @Override
+            public Tuple2<String, Integer> reduce(Tuple2<String, Integer> value1, Tuple2<String, Integer> value2) throws Exception {
+                // 上一个name与下一个name拼接起来，并且num相加
+                return Tuple2.of(value1.f0 + "_" + value2.f0, value2.f1 + value1.f1);
+            }
+        });
+        reduce.print();
 
         env.execute("BaseTransformApi_1");
 
