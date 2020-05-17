@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72fb2301-767b-4077-88a9-d7e4df708c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/myflink/sink/KafkaSinkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myflink/windowApi/TimeWindowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/windowTextFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -21,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/myflink/udfFunction/FilterFunctionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="151">
+              <caret line="26" selection-start-line="26" selection-end-line="30" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/myflink/udfFunction/RichFunctionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="197">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,79 +45,91 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/myflink/sourceApi/KafkaSourceApi.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/myflink/base/StreamingJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="18" selection-start-line="18" selection-end-line="26" selection-end-column="150" />
+            <state relative-caret-position="-305">
+              <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/myflink/sink/KafkaSinkTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.1/flink-connector-kafka-0.11_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="108" column="80" lean-forward="true" selection-start-line="108" selection-start-column="80" selection-end-line="108" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/serialization/SerializationSchema.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testfile">
+        <entry file="file://$PROJECT_DIR$/src/main/java/myflink/windowApi/TimeWindowTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="10" />
+            <state relative-caret-position="318">
+              <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-end-line="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3129#3130#0" expanded="true" />
+                <element signature="e#3186#3187#0" expanded="true" />
+                <element signature="e#3830#3831#0" expanded="true" />
+                <element signature="e#3878#3879#0" expanded="true" />
+                <element signature="e#3958#3959#0" expanded="true" />
+                <element signature="e#4023#4024#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/text">
+        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-sources.jar!/org/apache/flink/streaming/api/functions/timestamps/BoundedOutOfOrdernessTimestampExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="358">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/functions/RichMapFunction.java">
+        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-sources.jar!/org/apache/flink/streaming/api/functions/AssignerWithPeriodicWatermarks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="111">
+              <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/functions/RichFunction.java">
+        <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-sources.jar!/org/apache/flink/streaming/api/functions/TimestampAssigner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="371">
+              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/myflink/transform/SplitApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/myflink/transform/BaseTransformApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/windowTextFile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -144,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/text" />
         <option value="$PROJECT_DIR$/src/main/java/myflink/BatchJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/myflink/StreamingJob.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/myflink/base/StreamingJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/myflink/sourceApi/SourceTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -156,6 +169,9 @@
         <option value="$PROJECT_DIR$/src/main/java/myflink/udfFunction/FilterFunctionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/myflink/udfFunction/RichFunctionsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/myflink/sink/KafkaSinkTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/resources/windowTextFile" />
+        <option value="$PROJECT_DIR$/src/main/java/myflink/windowApi/TimeWindowTest.java" />
       </list>
     </option>
   </component>
@@ -185,10 +201,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1944" />
-    <option name="height" value="1044" />
+    <option name="x" value="-11" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -198,8 +213,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,7 +255,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="myflink" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-flink-project" type="b2602c69:ProjectViewProjectNode" />
@@ -258,7 +273,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="myflink" type="462c0819:PsiDirectoryNode" />
+              <item name="transform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-flink-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flinkLearnProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myflink" type="462c0819:PsiDirectoryNode" />
               <item name="udfFunction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-flink-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flinkLearnProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myflink" type="462c0819:PsiDirectoryNode" />
+              <item name="windowApi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-flink-project" type="b2602c69:ProjectViewProjectNode" />
@@ -300,7 +333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaSinkTest">
+  <component name="RunManager" selected="Application.TimeWindowTest">
     <configuration name="BaseTransformApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="myflink.transform.BaseTransformApi" />
       <module name="my-flink-project" />
@@ -353,12 +386,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplitApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="myflink.transform.SplitApi" />
+    <configuration name="TimeWindowTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="myflink.windowApi.TimeWindowTest" />
       <module name="my-flink-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myflink.transform.*" />
+          <option name="PATTERN" value="myflink.windowApi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -368,11 +401,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TimeWindowTest" />
         <item itemvalue="Application.KafkaSinkTest" />
         <item itemvalue="Application.RichFunctionsTest" />
         <item itemvalue="Application.FilterFunctionTest" />
         <item itemvalue="Application.BaseTransformApi" />
-        <item itemvalue="Application.SplitApi" />
       </list>
     </recent_temporary>
   </component>
@@ -399,18 +432,19 @@
       <workItem from="1587389628735" duration="632000" />
       <workItem from="1587432609352" duration="674000" />
       <workItem from="1589024959775" duration="4814000" />
-      <workItem from="1589089013774" duration="2574000" />
+      <workItem from="1589089013774" duration="4527000" />
+      <workItem from="1589687578909" duration="3702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33089000" />
+    <option name="totallyTimeSpent" value="38744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33036438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16194332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -420,12 +454,12 @@
       <window_info id="Alibaba Cloud Explorer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32976827" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52228165" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35115865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6221034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5026738" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5017794" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -468,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2240">
-          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/core/fs/FileSystem.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.0/flink-streaming-java_2.11-1.7.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/DataStream.class" />
@@ -494,30 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/transform/SplitApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/datastream/DataStreamSource.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/transform/BaseTransformApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,16 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/base/StreamingJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,20 +587,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/functions/RichFunction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/sourceApi/KafkaSourceApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/udfFunction/RichFunctionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="260">
+          <caret line="18" selection-start-line="18" selection-end-line="26" selection-end-column="150" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/sink/KafkaSinkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.1/flink-connector-kafka-0.11_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="108" column="80" selection-start-line="108" selection-start-column="80" selection-end-line="108" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/serialization/SerializationSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -614,54 +635,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/functions/RichFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/udfFunction/RichFunctionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/myflink/udfFunction/FilterFunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="151">
+          <caret line="26" selection-start-line="26" selection-end-line="30" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.1/flink-connector-kafka-0.11_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/transform/SplitApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="108" column="80" lean-forward="true" selection-start-line="108" selection-start-column="80" selection-end-line="108" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-core/1.9.1/flink-core-1.9.1-sources.jar!/org/apache/flink/api/common/serialization/SerializationSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/sourceApi/KafkaSourceApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="18" selection-start-line="18" selection-end-line="26" selection-end-column="150" />
+        <state relative-caret-position="375">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/sink/KafkaSinkTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/transform/BaseTransformApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state relative-caret-position="20">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testfile">
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/base/StreamingJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="10" />
+        <state relative-caret-position="-305">
+          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1.jar!/org/apache/flink/streaming/api/functions/AssignerWithPeriodicWatermarks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-sources.jar!/org/apache/flink/streaming/api/functions/AssignerWithPeriodicWatermarks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-sources.jar!/org/apache/flink/streaming/api/functions/TimestampAssigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.6.1/repository/org/apache/flink/flink-streaming-java_2.11/1.9.1/flink-streaming-java_2.11-1.9.1-sources.jar!/org/apache/flink/streaming/api/functions/timestamps/BoundedOutOfOrdernessTimestampExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/windowTextFile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/myflink/windowApi/TimeWindowTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3129#3130#0" expanded="true" />
+            <element signature="e#3186#3187#0" expanded="true" />
+            <element signature="e#3830#3831#0" expanded="true" />
+            <element signature="e#3878#3879#0" expanded="true" />
+            <element signature="e#3958#3959#0" expanded="true" />
+            <element signature="e#4023#4024#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
