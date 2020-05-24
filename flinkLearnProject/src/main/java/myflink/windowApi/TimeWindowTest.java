@@ -46,12 +46,12 @@ public class TimeWindowTest {
     }
 
     @Data
-    static class WindowPerson{
+    public static class WindowPerson{
         private Long id;
         private String name;
         private Long eventTimeStamp;
     }
-    static class PersonMapFunction implements MapFunction<String,WindowPerson> {
+    public static class PersonMapFunction implements MapFunction<String,WindowPerson> {
         @Override
         public WindowPerson map(String eachLine) throws Exception {
 
@@ -63,7 +63,7 @@ public class TimeWindowTest {
             return person;
         }
     }
-    static class  MyKeySelector implements KeySelector<WindowPerson,String>{
+    public static class  MyKeySelector implements KeySelector<WindowPerson,String>{
 
         @Override
         public String getKey(WindowPerson value) throws Exception {
