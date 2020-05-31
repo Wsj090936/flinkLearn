@@ -63,6 +63,7 @@ public class TimeWindowTest {
             return person;
         }
     }
+
     public static class  MyKeySelector implements KeySelector<WindowPerson,String>{
 
         @Override

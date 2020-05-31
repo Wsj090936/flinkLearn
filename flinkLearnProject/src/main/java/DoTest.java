@@ -14,9 +14,10 @@ import java.util.concurrent.*;
 public class DoTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        List<Integer> list = new ArrayList<Integer>(){{
-            add(1);
-        }
+        List<Integer> list = new ArrayList<Integer>(){
+            {
+                add(1);
+            }
         };
         System.out.println(list.get(0));
     }
