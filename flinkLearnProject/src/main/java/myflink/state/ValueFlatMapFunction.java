@@ -27,7 +27,7 @@ public class ValueFlatMapFunction extends RichFlatMapFunction<Person, Person> {
         this.factor = factor;
     }
 
-    private ValueState<Integer> lastAge = null;
+    private ValueState<Integer> lastAge = null;// 注意这里的状态只能用在keyby后面
     
     @Override
     public void open(Configuration parameters) throws Exception {
